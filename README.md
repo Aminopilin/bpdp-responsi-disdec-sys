@@ -1,5 +1,5 @@
 # bpdp-responsi-disdec-sys
-Nama : Aulia Rachmi Liunsanda
+Nama : Aulia Rachmi Liunsanda <br>
 NIM : 235410009
 Kelas : Informatika 1
 
@@ -7,12 +7,14 @@ soal Responsi
 1. Dengan menggunakan Docker, jalankan YugabyteDB dan kemudian buat 2 tabel dengan nama bebas dan isi kolom bebas. Isikan masing-masing 5 data. Buktikan bahwa 2 tabel dibuat dan data juga telah diisikan. Anda bisa menggunakan ysqlsh atau YugabyteDB UI.
 docker-running
    <img width="922" height="377" alt="image" src="https://github.com/user-attachments/assets/6750656a-6a4b-4d84-8d45-652284d53519" />
+   Screenshot ini menunjukkan bahwa container YugabyteDB berhasil dijalankan menggunakan Docker. Terlihat container dengan status Up, yang menandakan database siap digunakan.
 membuat tabel
 <img width="582" height="300" alt="image" src="https://github.com/user-attachments/assets/f2637e22-52a8-4cd4-b937-3162147dd562" />
+Screenshot ini menunjukkan proses pembuatan dua tabel, yaitu mahasiswa dan matakuliah, menggunakan perintah CREATE TABLE pada YugabyteDB. Kedua tabel berhasil dibuat tanpa error.
 <img width="497" height="618" alt="image" src="https://github.com/user-attachments/assets/fe9d0fa9-7d72-48bd-ad8f-25467d71220a" />
-
+Screenshot ini menampilkan hasil perintah SELECT * FROM mahasiswa;. dan SELECT * FROM matakuliah;. Terlihat terdapat 5 data mahasiswa dan data mata kuliah yang berhasil disimpan ke dalam tabel sebagai bukti proses insert data berhasil.
    
-3. Buatlah REST API menggunakan Python yang akan mengekspos data yang telah anda buat tersebut menggunakan Python. Hasil bisa diakses melalui browser atau headless tool (curl) dalam format JSON.
+2. Buatlah REST API menggunakan Python yang akan mengekspos data yang telah anda buat tersebut menggunakan Python. Hasil bisa diakses melalui browser atau headless tool (curl) dalam format JSON.
 
    <img width="953" height="143" alt="image" src="https://github.com/user-attachments/assets/2ac05671-54f7-481e-9469-87cd6448d533" />
 
@@ -25,7 +27,7 @@ test curll
 <img width="1427" height="577" alt="image" src="https://github.com/user-attachments/assets/7cc2c918-3358-4ed5-bbcb-e88eb5846a74" />
 
 
-5. Pilihlah blockchain L1 selain Solana. Jelaskan mekanisme konsensus yang digunakan dan buat diagram mekanisme konsensus blockchain tersebut.
+3. Pilihlah blockchain L1 selain Solana. Jelaskan mekanisme konsensus yang digunakan dan buat diagram mekanisme konsensus blockchain tersebut.
    
 Mekanisme Konsensus Ethereum: Gasper (PoS)
 Ethereum menggunakan mekanisme konsensus bernama Gasper, gabungan dari dua protokol:
