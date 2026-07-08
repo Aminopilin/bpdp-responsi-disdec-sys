@@ -17,7 +17,7 @@ Screenshot ini menampilkan hasil perintah SELECT * FROM mahasiswa;. dan SELECT *
    <br>
 2. Buatlah REST API menggunakan Python yang akan mengekspos data yang telah anda buat tersebut menggunakan Python. Hasil bisa diakses melalui browser atau headless tool (curl) dalam format JSON.<
    <img width="953" height="143" alt="image" src="https://github.com/user-attachments/assets/2ac05671-54f7-481e-9469-87cd6448d533" /><br>
-<br>
+
    <img width="958" height="547" alt="image" src="https://github.com/user-attachments/assets/67618da5-fdcc-4258-ab2e-63bbf07370f0" /><br>
 Screenshot ini menunjukkan bahwa REST API berbasis Python (Flask) berhasil dijalankan. Data dari tabel mahasiswa ditampilkan dalam format JSON dan dapat diakses melalui browser menggunakan endpoint http://localhost:5000/mahasiswa.<br>
    <img width="953" height="547" alt="image" src="https://github.com/user-attachments/assets/948c0865-27d0-47bc-8836-bb36b24842aa" /><br>
