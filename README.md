@@ -13,4 +13,14 @@ membuat tabel
 
    
 3. Buatlah REST API menggunakan Python yang akan mengekspos data yang telah anda buat tersebut menggunakan Python. Hasil bisa diakses melalui browser atau headless tool (curl) dalam format JSON.
-4. Pilihlah blockchain L1 selain Solana. Jelaskan mekanisme konsensus yang digunakan dan buat diagram mekanisme konsensus blockchain tersebut. 
+
+   <img width="953" height="143" alt="image" src="https://github.com/user-attachments/assets/2ac05671-54f7-481e-9469-87cd6448d533" />
+
+   <img width="958" height="547" alt="image" src="https://github.com/user-attachments/assets/67618da5-fdcc-4258-ab2e-63bbf07370f0" />
+
+   <img width="953" height="547" alt="image" src="https://github.com/user-attachments/assets/948c0865-27d0-47bc-8836-bb36b24842aa" />
+
+test curll
+
+
+5. Pilihlah blockchain L1 selain Solana. Jelaskan mekanisme konsensus yang digunakan dan buat diagram mekanisme konsensus blockchain tersebut. 
