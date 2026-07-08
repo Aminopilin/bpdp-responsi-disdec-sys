@@ -25,4 +25,32 @@ test curll
 <img width="1427" height="577" alt="image" src="https://github.com/user-attachments/assets/7cc2c918-3358-4ed5-bbcb-e88eb5846a74" />
 
 
-5. Pilihlah blockchain L1 selain Solana. Jelaskan mekanisme konsensus yang digunakan dan buat diagram mekanisme konsensus blockchain tersebut. 
+5. Pilihlah blockchain L1 selain Solana. Jelaskan mekanisme konsensus yang digunakan dan buat diagram mekanisme konsensus blockchain tersebut.
+   
+Mekanisme Konsensus Ethereum: Gasper (PoS)
+Ethereum menggunakan mekanisme konsensus bernama Gasper, gabungan dari dua protokol:
+1. LMD-GHOST (Latest Message Driven Greediest Heaviest Observed SubTree) menentukan cabang (fork) mana yang menjadi kepala rantai (head of chain) yang sah, berdasarkan bobot atestasi validator terbaru.
+2. Casper FFG (Friendly Finality Gadget) mekanisme untuk finalisasi, yaitu mengunci blok agar tidak bisa diubah lagi (irreversible).
+
+Alur kerja singkat
+1. Waktu dibagi menjadi slot (12 detik) dan epoch (32 slot, ~6,4 menit).
+2. Setiap slot, satu validator dipilih secara acak (berbobot jumlah stake, minimal 32 ETH) untuk menjadi proposer dan mengusulkan blok baru.
+3. Validator lain yang tergabung dalam committee memberikan atestasi (vote) yang menyatakan blok mana yang mereka anggap sah.
+4. Atestasi ini menjadi dasar bagi LMD-GHOST untuk memilih fork terbaik secara real-time.
+5. Setiap akhir epoch, Casper FFG memilih checkpoint (blok pertama tiap epoch). Jika ⅔ dari total stake mengatestasi sebuah checkpoint, checkpoint tersebut jadi justified; jika dua checkpoint berurutan justified, checkpoint pertama menjadi finalized.
+6. Validator yang berbuat curang (misalnya menandatangani dua blok konflik/"double vote") akan terkena slashing — sebagian stake-nya disita.
+
+Alur diagram
+<img width="725" height="795" alt="image" src="https://github.com/user-attachments/assets/462c48b9-f79a-429c-b826-17132dd11fa5" />
+
+Alur konsensus Ethereum PoS (Gasper):
+1. Staking — validator mengunci minimal 32 ETH untuk ikut serta.
+2. Pemilihan proposer — setiap slot (12 detik), satu validator dipilih acak (berbobot stake) untuk mengusulkan blok.
+3. Atestasi committee — validator lain dalam committee memvalidasi dan memberi vote (atestasi) atas blok tersebut.
+4. LMD-GHOST (fork choice) — atestasi ini dipakai untuk menentukan cabang rantai mana yang "terberat" dan menjadi kepala rantai yang sah, secara real-time.
+5. Casper FFG — justifikasi — di akhir tiap epoch (32 slot, ~6,4 menit), jika ⅔ dari total stake mengatestasi sebuah checkpoint, checkpoint itu menjadi justified.
+6. Casper FFG — finalisasi — jika dua checkpoint berurutan sama-sama justified, checkpoint pertama menjadi finalized — tidak bisa diubah lagi kecuali ⅓ total stake bersedia kena slashing.
+7. Slashing — jika validator terbukti curang (misalnya menandatangani dua blok yang saling bertentangan pada slot yang sama, "double vote"), sebagian stake-nya disita dan validator tersebut dikeluarkan dari jaringan.
+
+
+
