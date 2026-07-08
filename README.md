@@ -15,7 +15,7 @@ Screenshot ini menunjukkan proses pembuatan dua tabel, yaitu mahasiswa dan matak
 <img width="497" height="618" alt="image" src="https://github.com/user-attachments/assets/fe9d0fa9-7d72-48bd-ad8f-25467d71220a" /><br>
 Screenshot ini menampilkan hasil perintah SELECT * FROM mahasiswa;. dan SELECT * FROM matakuliah;. Terlihat terdapat 5 data mahasiswa dan data mata kuliah yang berhasil disimpan ke dalam tabel sebagai bukti proses insert data berhasil.<br>
    <br>
-2. Buatlah REST API menggunakan Python yang akan mengekspos data yang telah anda buat tersebut menggunakan Python. Hasil bisa diakses melalui browser atau headless tool (curl) dalam format JSON.<br>
+2. Buatlah REST API menggunakan Python yang akan mengekspos data yang telah anda buat tersebut menggunakan Python. Hasil bisa diakses melalui browser atau headless tool (curl) dalam format JSON.<
    <img width="953" height="143" alt="image" src="https://github.com/user-attachments/assets/2ac05671-54f7-481e-9469-87cd6448d533" /><br>
 <br>
    <img width="958" height="547" alt="image" src="https://github.com/user-attachments/assets/67618da5-fdcc-4258-ab2e-63bbf07370f0" /><br>
