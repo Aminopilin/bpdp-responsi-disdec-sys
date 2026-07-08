@@ -27,7 +27,8 @@ test curll<br>
    
 <img width="1427" height="577" alt="image" src="https://github.com/user-attachments/assets/7cc2c918-3358-4ed5-bbcb-e88eb5846a74" /><br>
 Screenshot ini menunjukkan hasil pengujian REST API menggunakan perintah curl di PowerShell. Respons yang diterima berupa data JSON, sehingga membuktikan bahwa endpoint API dapat diakses.<br>
-<br>
+
+
 3. Pilihlah blockchain L1 selain Solana. Jelaskan mekanisme konsensus yang digunakan dan buat diagram mekanisme konsensus blockchain tersebut.<br>
 Mekanisme Konsensus Ethereum: Gasper (PoS)<br>
 Ethereum menggunakan mekanisme konsensus bernama Gasper, gabungan dari dua protokol:<br>
