@@ -1,9 +1,9 @@
-# bpdp-responsi-disdec-sys
+responsi-disdec-sys
 Nama : Aulia Rachmi Liunsanda <br>
 NIM : 235410009 <br>
 Kelas : Informatika 1 <br>
 
-soal Responsi<br>
+Responsi<br>
 1. Dengan menggunakan Docker, jalankan YugabyteDB dan kemudian buat 2 tabel dengan nama bebas dan isi kolom bebas. Isikan masing-masing 5 data. Buktikan bahwa 2 tabel dibuat dan data juga telah diisikan. Anda bisa menggunakan ysqlsh atau YugabyteDB UI.
 docker-running<br>
    <img width="922" height="377" alt="image" src="https://github.com/user-attachments/assets/6750656a-6a4b-4d84-8d45-652284d53519" /><br>
