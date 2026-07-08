@@ -21,6 +21,8 @@ membuat tabel
    <img width="953" height="547" alt="image" src="https://github.com/user-attachments/assets/948c0865-27d0-47bc-8836-bb36b24842aa" />
 
 test curll
+<img width="1425" height="572" alt="image" src="https://github.com/user-attachments/assets/ff38c107-9ef6-4b30-8da5-7669a02624d7" />
+<img width="1427" height="577" alt="image" src="https://github.com/user-attachments/assets/7cc2c918-3358-4ed5-bbcb-e88eb5846a74" />
 
 
 5. Pilihlah blockchain L1 selain Solana. Jelaskan mekanisme konsensus yang digunakan dan buat diagram mekanisme konsensus blockchain tersebut. 
