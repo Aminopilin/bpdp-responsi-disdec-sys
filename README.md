@@ -8,31 +8,34 @@ soal Responsi<br>
 docker-running<br>
    <img width="922" height="377" alt="image" src="https://github.com/user-attachments/assets/6750656a-6a4b-4d84-8d45-652284d53519" /><br>
    Screenshot ini menunjukkan bahwa container YugabyteDB berhasil dijalankan menggunakan Docker. Terlihat container dengan status Up, yang menandakan database siap digunakan.<br>
+   <br>
 membuat tabel<br>
 <img width="582" height="300" alt="image" src="https://github.com/user-attachments/assets/f2637e22-52a8-4cd4-b937-3162147dd562" /><br>
 Screenshot ini menunjukkan proses pembuatan dua tabel, yaitu mahasiswa dan matakuliah, menggunakan perintah CREATE TABLE pada YugabyteDB. Kedua tabel berhasil dibuat tanpa error.<br>
 <img width="497" height="618" alt="image" src="https://github.com/user-attachments/assets/fe9d0fa9-7d72-48bd-ad8f-25467d71220a" /><br>
 Screenshot ini menampilkan hasil perintah SELECT * FROM mahasiswa;. dan SELECT * FROM matakuliah;. Terlihat terdapat 5 data mahasiswa dan data mata kuliah yang berhasil disimpan ke dalam tabel sebagai bukti proses insert data berhasil.<br>
-   
+   <br>
 2. Buatlah REST API menggunakan Python yang akan mengekspos data yang telah anda buat tersebut menggunakan Python. Hasil bisa diakses melalui browser atau headless tool (curl) dalam format JSON.<br>
-
    <img width="953" height="143" alt="image" src="https://github.com/user-attachments/assets/2ac05671-54f7-481e-9469-87cd6448d533" /><br>
-
+<br>
    <img width="958" height="547" alt="image" src="https://github.com/user-attachments/assets/67618da5-fdcc-4258-ab2e-63bbf07370f0" /><br>
 Screenshot ini menunjukkan bahwa REST API berbasis Python (Flask) berhasil dijalankan. Data dari tabel mahasiswa ditampilkan dalam format JSON dan dapat diakses melalui browser menggunakan endpoint http://localhost:5000/mahasiswa.<br>
    <img width="953" height="547" alt="image" src="https://github.com/user-attachments/assets/948c0865-27d0-47bc-8836-bb36b24842aa" /><br>
+
 Screenshot ini menunjukkan bahwa REST API berbasis Python (Flask) berhasil dijalankan. Data dari tabel mahasiswa ditampilkan dalam format JSON dan dapat diakses melalui browser menggunakan endpoint http://localhost:5000/matakuliah.<br>
+<br>
 test curll<br>
 <img width="1425" height="572" alt="image" src="https://github.com/user-attachments/assets/ff38c107-9ef6-4b30-8da5-7669a02624d7" /><br>
+   
 <img width="1427" height="577" alt="image" src="https://github.com/user-attachments/assets/7cc2c918-3358-4ed5-bbcb-e88eb5846a74" /><br>
 Screenshot ini menunjukkan hasil pengujian REST API menggunakan perintah curl di PowerShell. Respons yang diterima berupa data JSON, sehingga membuktikan bahwa endpoint API dapat diakses.<br>
-
+<br>
 3. Pilihlah blockchain L1 selain Solana. Jelaskan mekanisme konsensus yang digunakan dan buat diagram mekanisme konsensus blockchain tersebut.<br>
 Mekanisme Konsensus Ethereum: Gasper (PoS)<br>
 Ethereum menggunakan mekanisme konsensus bernama Gasper, gabungan dari dua protokol:<br>
 1. LMD-GHOST (Latest Message Driven Greediest Heaviest Observed SubTree) menentukan cabang (fork) mana yang menjadi kepala rantai (head of chain) yang sah, berdasarkan bobot atestasi validator terbaru.<br>
 2. Casper FFG (Friendly Finality Gadget) mekanisme untuk finalisasi, yaitu mengunci blok agar tidak bisa diubah lagi (irreversible).<br>
-
+<br>
 Alur kerja singkat<br>
 1. Waktu dibagi menjadi slot (12 detik) dan epoch (32 slot, ~6,4 menit).<br>
 2. Setiap slot, satu validator dipilih secara acak (berbobot jumlah stake, minimal 32 ETH) untuk menjadi proposer dan mengusulkan blok baru.<br>
@@ -40,10 +43,10 @@ Alur kerja singkat<br>
 4. Atestasi ini menjadi dasar bagi LMD-GHOST untuk memilih fork terbaik secara real-time.<br>
 5. Setiap akhir epoch, Casper FFG memilih checkpoint (blok pertama tiap epoch). Jika ⅔ dari total stake mengatestasi sebuah checkpoint, checkpoint tersebut jadi justified; jika dua checkpoint berurutan justified, checkpoint pertama menjadi finalized.<br>
 6. Validator yang berbuat curang (misalnya menandatangani dua blok konflik/"double vote") akan terkena slashing sebagian stake-nya disita.<br>
-
+<br>
 Alur diagram<br>
 <img width="725" height="795" alt="image" src="https://github.com/user-attachments/assets/462c48b9-f79a-429c-b826-17132dd11fa5" /><br>
-
+<br>
 Alur konsensus Ethereum PoS (Gasper):<br>
 1. Staking : validator mengunci minimal 32 ETH untuk ikut serta.<br>
 2. Pemilihan proposer : setiap slot (12 detik), satu validator dipilih acak (berbobot stake) untuk mengusulkan blok.<br>
